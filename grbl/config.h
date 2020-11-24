@@ -189,8 +189,9 @@
   // =============================
   // FoamCutter -> 4 linear axis
   // =============================
-    #define HOMING_CYCLE_0 ((1<<AXIS_1)|(1<<AXIS_3)) // Home X axis.
-    #define HOMING_CYCLE_1 ((1<<AXIS_2)|(1<<AXIS_4)) // Home Y axis
+    #define HOMING_CYCLE_0 ((1<<AXIS_2)|(1<<AXIS_4)) // Home Y axis (for Mill mode - save Tool).
+    #define HOMING_CYCLE_1 ((1<<AXIS_1)|(1<<AXIS_3)) // Home X axis.
+    
   // =============================
   #elif N_AXIS == 5 // 5 axis : homing
     // #define HOMING_CYCLE_0 (1<<AXIS_3) // Home Z axis first to clear workspace.
@@ -201,8 +202,8 @@
   // =============================
   // FoamCutter -> 5 linear axis
   // =============================
-    #define HOMING_CYCLE_0 ((1<<AXIS_1)|(1<<AXIS_3))  // Home X axis.
-    #define HOMING_CYCLE_1 ((1<<AXIS_2)|(1<<AXIS_4))  // Home Y axis
+    #define HOMING_CYCLE_0 ((1<<AXIS_2)|(1<<AXIS_4))  // Home Y axis (for Mill mode - save Tool).
+    #define HOMING_CYCLE_1 ((1<<AXIS_1)|(1<<AXIS_3))  // Home X axis.
     #define HOMING_CYCLE_2 (1<<AXIS_5)                // Home 5th axis (B) only when Mill mode
   // =============================
   #elif N_AXIS == 6 // 6 axis : homing
